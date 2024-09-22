@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Clicks</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            text-align: center;
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        #counter {
+            font-size: 4rem;
+            margin: 1rem 0;
+            color: #007bff;
+        }
+        #clickBtn {
+            font-size: 1rem;
+            padding: 0.5rem 1rem;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        #clickBtn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contador de Clicks</h1>
+        <div id="counter">0</div>
+        <button id="clickBtn">Haz Click</button>
+    </div>
+
+    <script>
+        let count = 0;
+        const counter = document.getElementById('counter');
+        const clickBtn = document.getElementById('clickBtn');
+
+        clickBtn.addEventListener('click', () => {
+            count++;
+            counter.textContent = count;
+        });
+    </script>
+</body>
+</html>
