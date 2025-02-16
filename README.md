@@ -1,5 +1,6 @@
 # Contador de Clicks
 
+![Pantallazo del proyecto](PantallazoProyecto.jpg)
 Este es un proyecto simple de un contador de clicks implementado con HTML, CSS y JavaScript. Es ideal para principiantes que quieren aprender sobre manipulación del DOM y manejo de eventos en JavaScript.
 
 ## Características
